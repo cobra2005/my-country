@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cờ đỏ sao vàng Việt Nam</title>
+    <style>
+        /* Cài đặt cơ bản cho trang */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Hộp chứa lá cờ */
+        .flag {
+            width: 300px;
+            height: 200px;
+            background-color: #DA251D; /* Màu đỏ nền của cờ */
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Ngôi sao vàng bằng SVG */
+        .star {
+            width: 30%;
+            height: auto;
+            fill: #FFFF00; /* Màu vàng của ngôi sao */
+        }
+    </style>
+</head>
+<body>
+    <div class="flag">
+        <!-- Vẽ ngôi sao vàng bằng SVG để căn giữa chính xác -->
+        <svg class="star" viewBox="0 0 24 24">
+            <polygon points="12,2 15,9 23,9 17,14 19,22 12,17 5,22 7,14 1,9 9,9" />
+        </svg>
+    </div>
+</body>
+</html>
